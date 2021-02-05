@@ -1,0 +1,25 @@
+
+@mixin flex-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin discount-none {
+  .card__top-discount {
+    display: none;
+  }
+}
+
+@mixin basket-none {
+  .card__bottom__price-basket{
+    display: none;
+  }
+}
+
+@mixin border-green {
+  background-color: $color-primary-green;
+  border-color: $color-primary-green;
+}
+
+

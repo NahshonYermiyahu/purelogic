@@ -1,0 +1,233 @@
+.main {
+  max-width: 100%;
+  padding-left: 20%;
+
+  //-----------CONTENT-TOP--------------
+
+  .content-top {
+    display: grid;
+    grid-template-columns: 3% 47% 47% 3%;
+    grid-template-rows: auto 15rem;
+    grid-template-areas:
+            'pad-l picture picture pad-r'
+            'pad-l slider slider pad-r'
+            ;
+
+    &__rear {
+      grid-area: 1/4/3/5;
+      background-color: $color-primary-green;
+    }
+
+    &__picture {
+      grid-area: picture;
+      background-color: $color-primary-white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &-text {
+        @include font_50_65_700_0;
+
+        p {
+          color: $color-primary-black;
+          padding-left: 5%;
+          text-align: center;
+        }
+      }
+
+      &-img {
+        position: relative;
+
+        img:nth-child(1) {
+          display: block;
+          background-size: cover;
+          background-position: center;
+        }
+
+        img:nth-child(2) {
+          position: absolute;
+          top: 7rem;
+          left: 7rem;
+          width: 5%;
+        }
+
+        img:nth-child(3) {
+          position: absolute;
+          bottom: 7rem;
+          right: 7%;
+          width: 5%;
+        }
+      }
+    }
+
+    &__slider {
+      grid-area: slider;
+      display: flex;
+
+      &__right {
+        background-color: $color-primary-green;
+      }
+
+      .ellipse-1 {
+        @include border-green;
+      }
+    }
+  }
+
+  //------------CONTENT-TOP_end--------------
+  //-----ADVANTAGES--------
+
+  .advantages {
+
+    &__top {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 3%;
+      padding-right: 3%;
+      background-color: $color-primary-green;
+    }
+
+    &__bottom {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 3% 3% 3%;
+    }
+  }
+
+  //-----ADVANTAGES-end-------
+  //------------BEST--------------
+
+  .best {
+
+    &__heading {
+      grid-area: heading;
+    }
+
+    &__card-1 {
+      grid-area: card-1;
+      @include basket-none;
+    }
+
+    &__card-2 {
+      grid-area: card-2;
+      @include discount-none;
+    }
+
+    &__card-3 {
+      grid-area: card-3;
+      @include discount-none;
+      @include basket-none;
+    }
+
+    &__card-4 {
+      grid-area: card-4;
+      @include discount-none;
+    }
+
+    &__slider {
+      grid-area: slider;
+
+      .ellipse-1 {
+        @include border-green;
+      }
+    }
+  }
+
+  //------------BEST_end--------------
+  //------------NEW-ITEMS--------------
+
+  .new-items {
+
+    &__heading {
+      grid-area: heading;
+    }
+
+    &__card-1 {
+      grid-area: card-1;
+      @include basket-none;
+    }
+
+    &__card-2 {
+      grid-area: card-2;
+      @include discount-none;
+    }
+
+    &__card-3 {
+      grid-area: card-3;
+      @include discount-none;
+      @include basket-none;
+    }
+
+    &__card-4 {
+      grid-area: card-4;
+      @include discount-none;
+    }
+
+    &__slider {
+      grid-area: slider;
+
+      .ellipse-1 {
+        @include border-green;
+      }
+    }
+  }
+
+  //------------NEW-ITEMS_end--------------
+  //------------CLIENTS_end--------------
+
+  .clients {
+
+    &__heading {
+      grid-area: heading;
+    }
+
+    &__card-1 {
+      grid-area: card-1;
+    }
+
+    &__card-2 {
+      grid-area: card-2;
+    }
+
+    &__card-3 {
+      grid-area: card-3;
+    }
+
+    &__card-4 {
+      grid-area: card-4;
+    }
+
+    &__card-5 {
+      grid-area: card-5;
+    }
+
+    &__card-6 {
+      grid-area: card-6;
+    }
+
+    &__card-7 {
+      grid-area: card-7;
+    }
+
+    &__card-8 {
+      grid-area: card-8;
+    }
+  }
+
+  //------------CLIENTS_end--------------
+  //------------CONTENT-TEXT--------------
+
+  .content-text {
+    padding: 3%;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+
+    &__text {
+      padding-top:2.8rem ;
+      @include font_16_30_400_0;
+      color: $color-content-text;
+    }
+  }
+  //------------CONTENT-TEXT_end--------------
+}
+
+

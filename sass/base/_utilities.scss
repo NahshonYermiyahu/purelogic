@@ -1,0 +1,47 @@
+
+.grid-4cards{
+  display: grid;
+  padding: 3%;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: 10rem auto 5rem;
+  grid-template-areas:
+          'heading heading heading heading'
+          'card-1 card-2 card-3 card-4'
+          'slider slider slider slider';
+}
+
+.grid-8cards {
+  display: grid;
+  padding: 3%;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: 10rem 30rem 30rem;
+  grid-template-areas:
+          'heading heading heading heading'
+          'card-1 card-2 card-3 card-4'
+          'card-5 card-6 card-7 card-8';
+}
+
+
+.heading {
+  @include font_40_60_700_0;
+  color: $color-primary-black;
+}
+
+.footer-heading {
+  @include font_24_40_500_0;
+  color: $color-content-text;
+}
+
+.footer-top__offices__heading {
+  @include font_18_40_500_0;
+}
+
+.footer-nav {
+  @include font_16_24_400_0;
+  padding-top: 2.5rem;
+
+  li {
+    padding-top: 1rem;
+  }
+
+}

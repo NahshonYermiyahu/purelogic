@@ -1,0 +1,147 @@
+//-----ADVANTAGES--------
+
+.advantages__card {
+  position: relative;
+  background-color: $color-primary-black;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  @include font_24_30_700_0;
+
+  img {
+    display: block;
+    opacity: 0.5;
+    transform: scale(1.02);
+  }
+
+  &-icon {
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    width: 20%;
+  }
+
+  &-text {
+    color: $color-primary-white;
+    position: absolute;
+    bottom: 15%;
+    left: 40%;
+  }
+}
+
+//-----ADVANTAGES-end--------
+//-----BEST__NEW-ITEMS--------
+
+.card {
+  background-color: $color-primary-white;
+  color: $color-primary-black;
+  border: 1px solid $color-border-EB;
+
+  &__top {
+    display: flex;
+    justify-content: flex-start;
+    @include font_11_00_400_15;
+    color: $color-primary-white;
+    text-transform: uppercase;
+
+    &-best {
+      background-color: $color-primary-black;
+      padding: 0.4rem 1rem;
+    }
+
+    &-discount {
+      background-color: $color-primary-red;
+      padding: 0.4rem 1rem;
+    }
+  }
+
+  &__center {
+    padding: 7% 12%;
+  }
+
+  &__bottom {
+    padding: 12% 10%;
+
+    &__art {
+      @include flex-between-center;
+      @include font_14_20_400_5;
+
+      &-left {
+        text-transform: uppercase;
+      }
+
+      &-right {
+        color: $color-primary-green;
+      }
+    }
+
+    &__name {
+      @include font_20_30_700_0;
+      padding: 1rem 0;
+    }
+
+    &__price {
+      @include flex-between-center;
+
+      &-left {
+        display: flex;
+        justify-content: flex-start;
+
+        p {
+          @include font_16_30_400_0;
+        }
+
+        span {
+          @include font_20_30_400_0;
+        }
+
+        p:nth-child(2) {
+          padding-left: 1rem;
+          color: $color-text-price;
+          text-decoration: line-through;
+        }
+
+      }
+
+      &-basket {
+        width: 13%;
+      }
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 0 55px 0 rgba(0,0,0,0.1);
+  }
+}
+
+//-----BEST__NEW-ITEMS-end--------
+//-----CLIENTS--------
+
+.clients__card {
+  background-color: $color-primary-white;
+  color: $color-primary-black;
+  border: 1px solid $color-border-EB;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 2rem;
+  }
+
+  p {
+    position: absolute;
+    width: max-content;
+    bottom: 2.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    @include font_14_30_700_0;
+  }
+
+  &:hover {
+    box-shadow: 0 0 55px 0 rgba(0,0,0,0.1);
+  }
+}
+//-----CLIENTS-end-------
