@@ -32,6 +32,11 @@
           background-color: $color-white-8;
           border-bottom: 1px solid rgba(108,108,108,0.3);
           color: $color-primary-black;
+          transition: all .2s;
+
+          &:hover {
+            background-color: $color-white-5;
+          }
 
           .img-box {
             width: 25%;
