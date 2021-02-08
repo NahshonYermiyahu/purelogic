@@ -9,34 +9,39 @@
 html {
   font-size: 62.5%;
 }
-@media only screen and (max-width: 101.18em) {
+@media only screen and (max-width: 101.25em) {
   html {
     font-size: 62%;
   }
 }
-@media only screen and (max-width: 94.94em) {
+@media only screen and (max-width: 95em) {
   html {
     font-size: 61.5%;
   }
 }
-@media only screen and (max-width: 88.69em) {
+@media only screen and (max-width: 88.75em) {
   html {
     font-size: 59.5%;
   }
 }
-@media only screen and (max-width: 82.44em) {
+@media only screen and (max-width: 82.5em) {
   html {
     font-size: 56.5%;
   }
 }
-@media only screen and (max-width: 74.94em) {
+@media only screen and (max-width: 75em) {
   html {
     font-size: 52.5%;
   }
 }
-@media only screen and (max-width: 69.94em) {
+@media only screen and (max-width: 70em) {
   html {
     font-size: 47.5%;
+  }
+}
+@media only screen and (min-width: 120em) {
+  html {
+    font-size: 67%;
   }
 }
 

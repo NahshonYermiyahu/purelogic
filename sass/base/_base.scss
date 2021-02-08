@@ -11,12 +11,13 @@ html {
   font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
   //1em = 16px
 
-  @media only screen and (max-width: 101.18em){font-size: 62%;} //1rem = 9.92px
-  @media only screen and (max-width: 94.94em){font-size: 61.5%;} //1rem = 9.84px
-  @media only screen and (max-width: 88.69em){font-size: 59.5%;} //1rem = 9.52px
-  @media only screen and (max-width: 82.44em){font-size: 56.5%;} //1rem = 9.04px
-  @media only screen and (max-width: 74.94em){font-size: 52.5%;} //1rem = 8.4px
-  @media only screen and (max-width: 69.94em){font-size: 47.5%;} //1rem = 7.6px
+  @media only screen and (max-width: 101.25em){font-size: 62%;} //1rem = 9.92px //max-width:1620px
+  @media only screen and (max-width: 95em){font-size: 61.5%;} //1rem = 9.84px //max-width:1520px
+  @media only screen and (max-width: 88.75em){font-size: 59.5%;} //1rem = 9.52px //max-width:1420px
+  @media only screen and (max-width: 82.5em){font-size: 56.5%;} //1rem = 9.04px //max-width:1320px
+  @media only screen and (max-width: 75em){font-size: 52.5%;} //1rem = 8.4px //max-width:1200px
+  @media only screen and (max-width: 70em){font-size: 47.5%;} //1rem = 7.6px //max-width:1120px
+  @media only screen and (min-width: 120em){font-size: 67%;} //1rem = 10.72px //mix-width:1921px
 
   //min-width: 1023px;
 }
