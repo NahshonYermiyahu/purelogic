@@ -6,12 +6,13 @@
   background-size: cover;
   background-position: center;
   overflow: hidden;
-  @include font_24_30_700_0;
+  width: 100%;
 
   img {
     display: block;
     opacity: 0.5;
     transform: scale(1.02);
+    width: 100%;
   }
 
   &-icon {
@@ -22,10 +23,19 @@
   }
 
   &-text {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3rem;
     color: $color-primary-white;
     position: absolute;
     bottom: 15%;
     left: 40%;
+
+    @media only screen and (max-width: 1619px){font-size: 2.2rem;}
+    @media only screen and (max-width: 1519px){font-size: 2.1rem;}
+    @media only screen and (max-width: 1419px){font-size: 2.05rem;}
+    @media only screen and (max-width: 1319px){font-size: 2.0rem;}
+    @media only screen and (max-width: 1199px){font-size: 1.8rem;}
   }
 }
 
@@ -40,7 +50,9 @@
   &__top {
     display: flex;
     justify-content: flex-start;
-    @include font_11_00_400_15;
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 0.15rem;
     color: $color-primary-white;
     text-transform: uppercase;
 
@@ -64,7 +76,10 @@
 
     &__art {
       @include flex-between-center;
-      @include font_14_20_400_5;
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 2rem;
+      letter-spacing: 0.05rem;
 
       &-left {
         text-transform: uppercase;
@@ -76,7 +91,9 @@
     }
 
     &__name {
-      @include font_20_30_700_0;
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 3rem;
       padding: 1rem 0;
     }
 
@@ -88,11 +105,16 @@
         justify-content: flex-start;
 
         p {
-          @include font_16_30_400_0;
+          font-size: 1.6rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 3rem;
         }
 
         span {
-          @include font_20_30_400_0;
+          font-size: 2rem;
+          font-weight: 400;
+          line-height: 3rem;
         }
 
         p:nth-child(2) {
@@ -137,7 +159,9 @@
     bottom: 2.8rem;
     left: 50%;
     transform: translateX(-50%);
-    @include font_14_30_700_0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 3rem;
   }
 
   &:hover {

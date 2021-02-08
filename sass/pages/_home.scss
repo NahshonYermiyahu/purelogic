@@ -26,12 +26,23 @@
       align-items: center;
 
       &-text {
-        @include font_50_65_700_0;
+        width: 30%;
+
+        @media only screen and (max-width: 1519px){width: 35%;}
+        @media only screen and (max-width: 1419px){width: 40%;}
+        @media only screen and (max-width: 1319px){width: 45%;}
+        @media only screen and (max-width: 1199px){width: 50%;}
 
         p {
+          font-size: 5rem;
+          font-weight: 700;
+          line-height: 6.5rem;
           color: $color-primary-black;
           padding-left: 5%;
           text-align: center;
+
+          @media only screen and (max-width: 1419px){font-size: 4.7rem;}
+          @media only screen and (max-width: 1319px){font-size: 4.3rem;}
         }
       }
 
@@ -64,8 +75,17 @@
       grid-area: slider;
       display: flex;
 
+      &__left {
+        width: 50%;
+
+        @media only screen and (max-width: 1519px){width: 60%;}
+      }
+
       &__right {
+        width: 50%;
         background-color: $color-primary-green;
+
+        @media only screen and (max-width: 1519px){width: 40%;}
       }
 
       .ellipse-1 {
@@ -99,9 +119,7 @@
 
   .best {
 
-    &__heading {
-      grid-area: heading;
-    }
+    &__heading {grid-area: heading;}
 
     &__card-1 {
       grid-area: card-1;
@@ -138,9 +156,7 @@
 
   .new-items {
 
-    &__heading {
-      grid-area: heading;
-    }
+    &__heading {grid-area: heading;}
 
     &__card-1 {
       grid-area: card-1;
@@ -177,41 +193,23 @@
 
   .clients {
 
-    &__heading {
-      grid-area: heading;
-    }
+    &__heading {grid-area: heading;}
 
-    &__card-1 {
-      grid-area: card-1;
-    }
+    &__card-1 {grid-area: card-1;}
 
-    &__card-2 {
-      grid-area: card-2;
-    }
+    &__card-2 {grid-area: card-2;}
 
-    &__card-3 {
-      grid-area: card-3;
-    }
+    &__card-3 {grid-area: card-3;}
 
-    &__card-4 {
-      grid-area: card-4;
-    }
+    &__card-4 {grid-area: card-4;}
 
-    &__card-5 {
-      grid-area: card-5;
-    }
+    &__card-5 {grid-area: card-5;}
 
-    &__card-6 {
-      grid-area: card-6;
-    }
+    &__card-6 {grid-area: card-6;}
 
-    &__card-7 {
-      grid-area: card-7;
-    }
+    &__card-7 {grid-area: card-7;}
 
-    &__card-8 {
-      grid-area: card-8;
-    }
+    &__card-8 {grid-area: card-8;}
   }
 
   //------------CLIENTS_end--------------
@@ -223,11 +221,14 @@
 
     &__text {
       padding-top:2.8rem ;
-      @include font_16_30_400_0;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 3rem;
       color: $color-content-text;
     }
   }
   //------------CONTENT-TEXT_end--------------
 }
+
 
 

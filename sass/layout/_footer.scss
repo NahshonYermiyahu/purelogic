@@ -31,12 +31,17 @@ footer {
       flex-wrap: wrap;
 
       p:nth-child(1) {
-        @include font_14_16_400_6;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 1.6rem;
+        letter-spacing: 0.06rem;
         padding-bottom: 1.1rem;
       }
 
       p:nth-child(2) {
-        @include font_20_30_700_0;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 3rem;
         padding-right: 1rem;
       }
 
@@ -70,8 +75,26 @@ footer {
         display: flex;
         padding: 1.5rem 0 3rem 0;
 
+        img {
+          @media only screen and (max-width: 1519px) {width: 90%;}
+          @media only screen and (max-width: 1419px) {width: 83%;}
+          @media only screen and (max-width: 1319px) {width: 75%;}
+          @media only screen and (max-width: 1199px) {width: 70%;}
+        }
+
         p {
-          @include font_16_24_400_0;
+          font-size: 1.6rem;
+          font-weight: 400;
+          line-height: 2.4rem;
+          padding-left: 2rem;
+
+          @media only screen and (max-width: 1519px) {
+            padding-left: 1rem;
+          }
+
+          @media only screen and (max-width: 1419px) {
+            padding-left: 0.5rem;
+          }
         }
       }
     }
@@ -119,8 +142,20 @@ footer {
       color: $color-primary-white;
       padding-left: 4.4rem;
 
+      p:nth-child(1){
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 4rem;
+
+        @media only screen and (max-width: 1519px){font-size: 2.8rem;}
+        @media only screen and (max-width: 1419px){font-size: 2.7rem;}
+        @media only screen and (max-width: 1199px){font-size: 2.5rem;}
+      }
+
       p:nth-child(2) {
-        @include font_16_24_400_0;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.4rem;
       }
     }
 
@@ -134,7 +169,10 @@ footer {
       height: 100%;
       padding-left: 3rem;
       background-color: $color-primary-white;
-      @include font_14_16_400_6;
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 1.6rem;
+      letter-spacing: 0.06rem;
       color: $color-primary-black;
       }
 
@@ -145,7 +183,9 @@ footer {
         width: 30%;
         height: 100%;
         background-color: $color-primary-black;
-        @include font_18_22_500_0;
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 2.2rem;
         color: $color-primary-white;
         transition: all 0.2s;
 
@@ -172,7 +212,10 @@ footer {
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      @include font_14_24_400_5;
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 2.4rem;
+      letter-spacing: 0.05rem;
       padding-top: 5rem;
       padding-bottom: 3.3rem;
 
@@ -184,7 +227,6 @@ footer {
         &:hover {
           color: $color-primary-green;
         }
-
       }
 
       p {
@@ -210,7 +252,9 @@ footer {
     }
 
     &__text {
-      @include font_14_24_400_0;
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 2.4rem;
       padding-bottom: 4rem;
       padding-right: 5rem;
     }
